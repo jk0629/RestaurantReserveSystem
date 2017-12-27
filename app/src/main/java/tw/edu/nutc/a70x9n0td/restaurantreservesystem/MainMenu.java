@@ -9,5 +9,6 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+        setTitle("餐廳訂位系統"); //變更活動標題為餐廳訂位系統
     }
 }

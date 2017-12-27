@@ -4,15 +4,212 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="tw.edu.nutc.a70x9n0td.restaurantreservesystem.MainMenu">
+    tools:context="tw.edu.nutc.a70x9n0td.restaurantreservesystem.MainMenu"
+    tools:layout_editor_absoluteY="81dp">
 
-    <TextView
+    <ImageButton
+        android:id="@+id/grid1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toStartOf="@+id/grid2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/reg" />
 
+    <ImageButton
+        android:id="@+id/grid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login" />
+
+    <ImageButton
+        android:id="@+id/grid3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/grid6"
+        app:layout_constraintStart_toStartOf="@+id/grid6"
+        app:layout_constraintTop_toTopOf="@+id/grid2"
+        app:srcCompat="@drawable/medit" />
+
+    <ImageButton
+        android:id="@+id/grid4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        app:layout_constraintEnd_toStartOf="@+id/grid5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridt1"
+        app:srcCompat="@drawable/addrestaurant" />
+
+    <ImageButton
+        android:id="@+id/grid5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridt2"
+        app:srcCompat="@drawable/editrestaurant" />
+
+    <ImageButton
+        android:id="@+id/grid6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        app:layout_constraintEnd_toEndOf="@+id/grid9"
+        app:layout_constraintStart_toStartOf="@+id/grid9"
+        app:layout_constraintTop_toBottomOf="@+id/gridt3"
+        app:srcCompat="@drawable/rstatus" />
+
+    <ImageButton
+        android:id="@+id/grid7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/grid8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridt4"
+        app:srcCompat="@drawable/cancel" />
+
+    <ImageButton
+        android:id="@+id/grid8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridt5"
+        app:srcCompat="@drawable/success" />
+
+    <ImageButton
+        android:id="@+id/grid9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gridt8"
+        app:layout_constraintTop_toBottomOf="@+id/gridt6"
+        app:srcCompat="@drawable/reserve" />
+
+    <TextView
+        android:id="@+id/gridt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="會員註冊"
+        app:layout_constraintEnd_toStartOf="@+id/gridt2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid1" />
+
+    <TextView
+        android:id="@+id/gridt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="會員登入"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid2" />
+
+    <TextView
+        android:id="@+id/gridt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="會員修改"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gridt2"
+        app:layout_constraintTop_toBottomOf="@+id/grid3" />
+
+    <TextView
+        android:id="@+id/gridt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="新增餐廳"
+        app:layout_constraintEnd_toStartOf="@+id/gridt5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid4" />
+
+    <TextView
+        android:id="@+id/gridt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="修改餐廳"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid5" />
+
+    <TextView
+        android:id="@+id/gridt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="餐廳訂位"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gridt5"
+        app:layout_constraintTop_toBottomOf="@+id/grid6" />
+
+    <TextView
+        android:id="@+id/gridt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="取消訂位"
+        app:layout_constraintEnd_toStartOf="@+id/gridt8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid7" />
+
+    <TextView
+        android:id="@+id/gridt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="成功訂位"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid8" />
+
+    <TextView
+        android:id="@+id/gridt9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="預約排程"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gridt8"
+        app:layout_constraintTop_toBottomOf="@+id/grid9" />
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="56dp"
+        android:text="官網：http://www.wowshiny.com.tw"
+        app:layout_constraintEnd_toEndOf="@+id/gridt9"
+        app:layout_constraintTop_toBottomOf="@+id/gridt7" />
 </android.support.constraint.ConstraintLayout>
