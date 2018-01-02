@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".reg"></activity>
+        <activity android:name=".reg" />
+        <activity android:name=".add_rest_MainActivity" />
+        <activity android:name=".edit_rest_MainActivity" />
+        <activity android:name=".rest_order_MainActivity"></activity>
     </application>
 
 </manifest>
