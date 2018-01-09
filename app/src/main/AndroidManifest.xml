@@ -19,7 +19,8 @@
         <activity android:name=".reg" />
         <activity android:name=".add_rest_MainActivity" />
         <activity android:name=".edit_rest_MainActivity" />
-        <activity android:name=".rest_order_MainActivity"></activity>
+        <activity android:name=".rest_order_MainActivity" />
+        <activity android:name=".rest01_reserve"></activity>
     </application>
 
 </manifest>

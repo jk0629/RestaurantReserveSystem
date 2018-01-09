@@ -25,5 +25,17 @@ public class MainMenu extends AppCompatActivity {
         intent.setClass(MainMenu.this ,edit_rest_MainActivity.class);
         startActivity(intent);
     }
+
+    public void cvclick3 (View v) {
+        Intent intent = new Intent();
+        intent.setClass(MainMenu.this ,rest_order_MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void cvclick4(View v) {
+        Intent intent = new Intent();
+        intent.setClass(MainMenu.this ,rest01_reserve.class);
+        startActivity(intent);
+    }
 }
 
